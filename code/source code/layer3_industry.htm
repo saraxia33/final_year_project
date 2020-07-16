@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FuturesV_Layer3</title>
+<script src="jquery-2.1.1.min.js"></script>
+
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+     axisX: {
+		stripLines:[
+		  {
+			  startValue:24,
+			  endValue:24.1,                
+			  color:"red"
+		  }
+		  ],
+      title:"Risk Level",
+	  minimum:0,
+	  titleFontSize: 15
+     
+    },
+    axisY: {
+		stripLines:[
+		  {
+			  startValue:3,
+			  endValue:4,                
+			  color:"red"
+		  }
+		  ],
+      title:"Return Rate",
+	  titleFontSize: 15,
+      maximum: 100,
+	  minimum: -100
+    },
+
+    legend:{
+      verticalAlign: "bottom",
+      horizontalAlign: "left"
+
+    },
+	<!--Range1-->
+    data: [
+    {        
+      type: "bubble", 
+	  markerColor: "#3d0101",
+      toolTipContent: "<span style='\"'color: {color};'\"'><strong>{name}</strong></span><br/><strong>Risk Level</strong> {x} %<br/> <strong>Return Rate</strong> {y}%<br/> <strong>Trading Volume</strong> {z}contracts<br/> <strong>Trading Price</strong> ${a}",
+	  click: function(e){ 
+    		window.location.href="layer4_single.htm";
+  },
+      dataPoints: [      
+       { y: 28.1, x: 3.4, z: 56789, a:32.3, name: "The Hang Seng index future of the HKFE_Z15" },
+
+       ]
+     },
+     
+	 <!--Range2-->
+	
+    {        
+      type: "bubble", 
+	  markerColor: "#7f0101",
+      toolTipContent: "<span style='\"'color: {color};'\"'><strong>{name}</strong></span><br/><strong>Risk Level</strong> {x} %<br/> <strong>Return Rate</strong> {y}%<br/> <strong>Trading Volume</strong> {z}contracts<br/> <strong>Trading Price</strong> ${a}",
+	  click: function(e){ 
+    		window.location.href="layer4_single.htm";
+  },
+      dataPoints: [      
+       { y: 23.5, x: -12.5, z: 67890, a:22.45,name: "The Hang Seng index future of the HKFE_Z16"},
+       { y: 56.5, x: -5.5, z: 54678, a:14.55,name: "The Hang Seng index future of the HKFE_H15"},
+       ]
+     },
+	 <!--Range3-->
+    {        
+      type: "bubble", 
+	  markerColor: "#c90101",
+      toolTipContent: "<span style='\"'color: {color};'\"'><strong>{name}</strong></span><br/><strong>Risk Level</strong> {x} %<br/> <strong>Return Rate</strong> {y}%<br/> <strong>Trading Volume</strong> {z}contracts<br/> <strong>Trading Price</strong> ${a}",
+	  click: function(e){ 
+    		window.location.href="layer4_single.htm";
+  },
+      dataPoints: [      
+       { y: 13.5, x: 23.8, z: 43456, a:8.5,name: "The Hang Seng index future of the HKFE_H16"},
+       ]
+     },
+	 <!--Range4-->
+    {        
+      type: "bubble", 
+	  markerColor: "#fc0f0f",
+      toolTipContent: "<span style='\"'color: {color};'\"'><strong>{name}</strong></span><br/><strong>Risk Level</strong> {x} %<br/> <strong>Return Rate</strong> {y}%<br/> <strong>Trading Volume</strong> {z}contracts<br/> <strong>Trading Price</strong> ${a}",
+	  click: function(e){ 
+    		window.location.href="layer4_single.htm";
+  },
+ 
+      dataPoints: [      
+       { y: 2.9, x: 34.5, z: 44892, a:1.3,name: "Corn_M15"},
+       { y: 45.6, x: 12, z:98653, a:6.9,name: "The Hang Seng index future of the HKFE_M16" }
+       ]
+     }
+     ]
+	  
+   });
+
+chart.render();
+}
+</script>
+<script type="text/javascript" src="canvasjs.min.js"></script>
+<script>
+function goForward()
+  {
+  window.history.forward()
+  }
+function goBack()
+  {
+  window.history.back()
+  }
+</script>
+</head>
+<body>
+<!--Tool Bar-->
+<div >
+    <div style="background-color:#4b4a4a; height:40px; width:100%; position:fixed; left:0px; top::0px; padding:0;  margin:0;">
+      <ul style=" list-style-type: none;">
+          <div>
+              <a href="layer1.htm"><li style="position:fixed;top:10px;left:10px;"><img src="../pic/logo.png" height="40px" /></img></li></a>
+              <li style="position:fixed;top:10px;left:60px;"><img src="../pic/user profile.png"  height="50px" ></img></li>
+              <li style="position:fixed;top:10px;left:200px;"><img src="../pic/fav contracts.png" height="35px" /></img></li> 
+          </div>
+      </ul>
+<div style="position:fixed; top:15px; right:20px;">
+              <input type="search" name="search" id="search" placeholder="Search..." />
+              <div data-role="content">
+                  <form method="post" action="../demoform.asp">
+                  <div data-role="fieldcontain"></div>
+                  </form>
+              </div>             
+          </div>
+    <!--Navigation Bar-->
+<div style="background-color:#f1f0f0; height:40px; width:100%; position:fixed; left:0px; top: 47px; padding:0; margin:0;">
+      <ul style=" list-style-type: none;">
+            <div>
+              <a href="layer1.htm"><li style="position:fixed;top:55px;left:15px;"><img src="../pic/global view.png" height="25px" /></img></li></a>
+              <a href="layer2_treemap.htm"><li style="position:fixed;top:55px;left:150px;"><img src="../pic/treemap view.png"  height="25px" ></img></li></a>
+              <a href="layer3_industry.htm"><li style="position:fixed;top:55px;left:290px;"><img src="../pic/bubble chart.png" height="25px" /></img></li></a>
+              <li style="position:fixed;top:55px;left:470px;"><img src="../pic/techical analysis.png" height="25px" /></img></li>
+              <li style="position:fixed;top:50px;right:80px;"><input type="image" src="../pic/arrow_left.png" onclick="goBack()" height="35px"></img></li>
+              <li style="position:fixed;top:50px;right:40px;"><input type="image" src="../pic/arrow_right.png" onclick="goForward()" height="35px"></img></li>
+             </div>
+  </ul>  
+</div>
+    <!--Map-->
+  <div id="chartContainer" style="height: 80%; width: 80%; position:fixed; top: 15%">
+  </div>
+  
+  <a href="layer4_multiple.htm"><input type="button" value="multiple contract"  style="position:fixed;top:100px;right:40px;" "height="35px"/></a>
+</body>
+</html>

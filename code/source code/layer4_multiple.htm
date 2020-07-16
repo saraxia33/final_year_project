@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN" xml:lang="zh-CN">
+	<head>
+		<title>Layer4</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style type="text/css" media="screen">
+		#flashContent { width:100%; height:100%; }
+		</style>
+        <script src="jquery-2.1.1.min.js"></script>
+<script>
+function goForward()
+  {
+  window.history.forward()
+  }
+function goBack()
+  {
+  window.history.back()
+  }
+
+</script>
+	</head>
+	<body>
+        <!--Tool Bar-->
+<div >
+    <div style="background-color:#4b4a4a; height:40px; width:100%; position:fixed; left:0px; top::0px; padding:0;  margin:0;">
+      <ul style=" list-style-type: none;">
+          <div>
+              <a href="layer1.htm"><li style="position:fixed;top:10px;left:10px;"><img src="../pic/logo.png" height="40px" /></img></li></a>
+              <li style="position:fixed;top:10px;left:60px;"><img src="../pic/user profile.png"  height="50px" ></img></li>
+              <li style="position:fixed;top:10px;left:200px;"><img src="../pic/fav contracts.png" height="35px" /></img></li> 
+          </div>
+      </ul>
+<div style="position:fixed; top:15px; right:20px;">
+              <input type="search" name="search" id="search" placeholder="Search..." />
+              <div data-role="content">
+                  <form method="post" action="../demoform.asp">
+                  <div data-role="fieldcontain"></div>
+                  </form>
+              </div>             
+          </div>
+    <!--Navigation Bar-->
+<div style="background-color:#f1f0f0; height:40px; width:100%; position:fixed; left:0px; top: 47px; padding:0; margin:0;">
+      <ul style=" list-style-type: none;">
+            <div>
+              <a href="layer1.htm"><li style="position:fixed;top:55px;left:15px;"><img src="../pic/global view.png" height="25px" /></img></li></a>
+              <a href="layer2_treemap.htm"><li style="position:fixed;top:55px;left:150px;"><img src="../pic/treemap view.png"  height="25px" ></img></li></a>
+              <a href="layer3_industry.htm"><li style="position:fixed;top:55px;left:290px;"><img src="../pic/bubble chart.png" height="25px" /></img></li></a>
+              <li style="position:fixed;top:55px;left:470px;"><img src="../pic/techical analysis.png" height="25px" /></img></li>
+              <li style="position:fixed;top:50px;right:80px;"><input type="image" src="../pic/arrow_left.png" onclick="goBack()" height="35px"></img></li>
+              <li style="position:fixed;top:50px;right:40px;"><input type="image" src="../pic/arrow_right.png" onclick="goForward()" height="35px"></img></li>
+             </div>
+  </ul>  
+</div>
+<!--Flash-->
+		<div id="flashContent" style="position:fixed; top:15%;left:5%;">
+			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="80%" height="80%" id="C:\Users\Sara XIA\Dropbox\7th Semester\Presentation\未命名-2" align="middle">
+				<param name="movie" value="C:\Users\Sara XIA\Dropbox\7th Semester\Presentation\未命名-2.swf" />
+				<param name="quality" value="high" />
+				<param name="bgcolor" value="#ffffff" />
+				<param name="play" value="true" />
+				<param name="loop" value="true" />
+				<param name="wmode" value="window" />
+				<param name="scale" value="showall" />
+				<param name="menu" value="true" />
+				<param name="devicefont" value="false" />
+				<param name="salign" value="" />
+				<param name="allowScriptAccess" value="sameDomain" />
+				<param name="allowFullScreen" value="true" />
+				<!--[if !IE]>-->
+				<object type="application/x-shockwave-flash" data="C:\Users\Sara XIA\Dropbox\7th Semester\Presentation\未命名-2.swf" width="80%" height="80%">
+					<param name="movie" value="C:\Users\Sara XIA\Dropbox\7th Semester\Presentation\未命名-2.swf" />
+					<param name="quality" value="high" />
+					<param name="bgcolor" value="#ffffff" />
+					<param name="play" value="true" />
+					<param name="loop" value="true" />
+					<param name="wmode" value="window" />
+					<param name="scale" value="showall" />
+					<param name="menu" value="true" />
+					<param name="devicefont" value="false" />
+					<param name="salign" value="" />
+					<param name="allowScriptAccess" value="sameDomain" />
+					<param name="allowFullScreen" value="true" />
+				<!--<![endif]-->
+					<a href="http://www.adobe.com/go/getflash">
+						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="获得 Adobe Flash Player" />
+					</a>
+				<!--[if !IE]>-->
+				</object>
+				<!--<![endif]-->
+			</object>
+		</div>
+	</body>
+</html>

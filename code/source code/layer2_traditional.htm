@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FuturesV_Layer2_treemap</title>
+<script src="jquery-2.1.1.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#top_volume").mouseover(function(){
+		$("#top_volume_info").css("display","block");
+	});
+	$("#top_volume").mouseleave(function(){
+		$("#top_volume_info").css("display","none");		
+	});
+});
+function goForward()
+  {
+  window.history.forward()
+  }
+function goBack()
+  {
+  window.history.back()
+  }
+</script>
+</head> 
+
+<body>
+<!--Tool Bar-->
+<div >
+    <div style="background-color:#4b4a4a; height:40px; width:100%; position:fixed; left:0px; top::0px; padding:0;  margin:0;">
+      <ul style=" list-style-type: none;">
+          <div>
+              <a href="layer1.htm"><li style="position:fixed;top:10px;left:10px;"><img src="../pic/logo.png" height="40px"  /></img></li></a>
+              <li style="position:fixed;top:10px;left:60px;"><img src="../pic/user profile.png"  height="50px"  ></img></li>
+              <li style="position:fixed;top:10px;left:200px;"><img src="../pic/fav contracts.png" height="35px"  /></img></li> 
+          </div>
+      </ul>
+<div style="position:fixed; top:15px; right:20px;">
+              <input type="search" name="search" id="search" placeholder="Search..." />
+  <div data-role="content">
+                  <form method="post" action="../demoform.asp">
+                  <div data-role="fieldcontain"></div>
+                  </form>
+              </div>             
+</div>
+    <!--Navigation Bar-->
+<div style="background-color:#f1f0f0; height:40px; width:100%; position:fixed; left:0px; top: 47px; padding:0; margin:0;">
+      <ul style=" list-style-type: none;">
+            <div>
+             <a href="layer1.htm"><li style="position:fixed;top:55px;left:15px;"><img src="../pic/global view.png" height="25px"  /></img></li></a>
+              <a href="layer2_traditional.htm"><li style="position:fixed;top:55px;left:150px;"><img src="../pic/treemap view.png"  height="25px"  ></img></li></a>
+              <li style="position:fixed;top:55px;left:290px;"><img src="../pic/bubble chart.png" height="25px"  /></img></li> 
+              <li style="position:fixed;top:55px;left:470px;"><img src="../pic/techical analysis.png" height="25px"  /></img></li>
+			  <li style="position:fixed;top:50px;right:80px;"><input type="image" src="../pic/arrow_left.png" onclick="goBack()" height="35px"></img></li>
+              <li style="position:fixed;top:50px;right:40px;"><input type="image" src="../pic/arrow_right.png" onclick="goForward()" height="35px"></img></li>           
+             </div>
+  </ul>  
+</div>
+    <!--traditional list and buttons-->
+    <div>
+    	 <img src="../pic/traditional_view_list.png" style="height:60%; width:70%; position:fixed; top:100px; left: 10px; "/></img>
+         <a href="layer2_treemap.htm"><img src="../pic/treemap_button.png" style="height:15%; width: 15%; position:fixed; top:100px; right: 7.5%; z-index:0;"/></img></a>
+         <img src="../pic/Price Change.png" style="height:15%; width: 15%; position:fixed; top:37.5%; right: 7.5%;"/></img>
+         <a href="layer3.htm"><img id="top_volume" src="../pic/Top Volumn.png" style="height:15%; width: 15%; position:fixed; top:60%; right: 7.5%; z-index:0;"/></img></a>
+         <img id="top_volume_info" src="../pic/Top5.png" style="height:75%; width:auto; position:fixed; top:35%; right:20%;  display:none" /></img>
+
+    </div>
+    
+    <!-- Industrial Summary-->
+    <div>
+    	<img src="../pic/Industrial Summary.png" style="height:4%; position:fixed; bottom:18%; left: 10px;"/></img>
+        <img src="../pic/energy.png" style="height:3%; position:fixed; bottom:12%; left: 10px;"/></img>
+        <img src="../pic/Agriculture.png" style="height:3%; position:fixed; bottom:12%; left: 20%;"/></img>
+        <img src="../pic/Metal .png" style="height:3%; position:fixed; bottom:12%; left: 40%;"/></img>
+        <img src="../pic/finance.png" style="height:3%; position:fixed; bottom:12%; left: 60%;"/></img>
+        <img src="../pic/index.png" style="height:3%; position:fixed; bottom:12%; left: 80%;"/></img>
+      <img src="../pic/energy_bar.png" style="height:8%; position:fixed; bottom:3%; left: 10px;"/></img>
+      <img src="../pic/Agriculture_bar.png" style="height:8%; position:fixed; bottom:3%; left: 20%;"/></img>
+      <img src="../pic/metal_bar.png" style="height:8%; position:fixed; bottom:3%; left: 40%;"/></img>
+      <img src="../pic/finance_bar.png" style="height:8%; position:fixed; bottom:3%; left: 60%;"/></img>
+      <a href="layer3_industry.htm"><img src="../pic/index_bar.png" style="height:8%; position:fixed; bottom:3%; left: 80%;"/></img></a>
+    </div>
+   
+
+</body>
+</html>
+
